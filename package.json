@@ -1,0 +1,19 @@
+{
+  "name": "plan-local",
+  "private": true,
+  "version": "1.6.0",
+  "type": "module",
+  "dependencies": {
+    "@xmldom/xmldom": "0.9.12",
+    "@xyflow/react": "^12.10.0",
+    "fflate": "0.8.3",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zustand": "^5.0.0"
+  },
+  "main": "electron/main.cjs",
+  "description": "ПЛАН — локальная интеллект-карта и дорожная карта",
+  "author": "ПЛАН"
+}
