@@ -32,11 +32,11 @@ cp "$HERE/build/plan.ico" "$STAGE/plan.ico"
 
 echo "==> Портативный ZIP"
 mkdir -p "$RELEASE"
-( cd "$STAGE" && zip -rq "$RELEASE/ПЛАН-portable-${VERSION}-win-x64.zip" . )
+( cd "$STAGE" && zip -rq "$RELEASE/PLAN-portable-${VERSION}-win-x64.zip" . )
 
 echo "==> Установщик NSIS"
 ( cd "$WORK" && cp "$HERE/build/installer.nsi" . && cp "$HERE/build/plan.ico" . \
-  && makensis installer.nsi && cp "ПЛАН-Setup-${VERSION}.exe" "$RELEASE/" )
+  && makensis installer.nsi && cp "PLAN-Setup-${VERSION}.exe" "$RELEASE/" )
 
 echo "==> Готово:"
 ls -lh "$RELEASE"

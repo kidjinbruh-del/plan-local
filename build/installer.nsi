@@ -10,12 +10,11 @@ Unicode true
 !define UNINSTKEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}"
 
 Name "${APPNAME}"
-OutFile "ПЛАН-Setup-${APPVERSION}.exe"
+OutFile "PLAN-Setup-${APPVERSION}.exe"
 InstallDir "$LOCALAPPDATA\Programs\${APPNAME}"
 InstallDirRegKey HKCU "Software\${APPNAME}" "InstallDir"
 RequestExecutionLevel user
-SetCompressor /SOLID lzma
-SetCompressorDictSize 64
+SetCompressor zlib
 BrandingText "${APPNAME} ${APPVERSION}"
 
 VIProductVersion "1.6.0.0"

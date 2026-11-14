@@ -38,7 +38,7 @@ cp build/plan.ico  app-stage/plan.ico
 
 ```bash
 cd app-stage
-zip -rq ../ПЛАН-portable-1.6.0-win-x64.zip .
+zip -rq ../PLAN-portable-1.6.0-win-x64.zip .
 cd ..
 ```
 
